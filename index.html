@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVING BOX</title>
+    <style>
+        #container {
+            left: 50px;
+            width: 1240px;
+            height: 500px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        #movingDiv {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            position: absolute;
+        }
+        #stopMovingBtn{
+            font-size: 20px;
+            margin-left: 620px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <article id="container">
+        <div id="movingDiv"></div>
+    </article>
+    <button id="stopMovingBtn" type="button">STOP</button>
+    <script src="./main.js" type="text/javascript"></script>
+</body>
+</html>
