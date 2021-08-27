@@ -85,18 +85,18 @@ printFlags();
 
 //! ex. 10
 
-var counter = 1;
+var count = 1;
 
 myBtn.onclick = () => {
     userMessage.innerText = `${userInput.value} ${Math.floor(Math.random() * 101)}`;
-    if (counter == 1){
+    if (count == 1){
         myBtn.style.background = "red";
     }
-    else if (counter == 2){
+    else if (count == 2){
         myBtn.style.background = "blue";
     }
     else{
         myBtn.style.background = "yellow";
     }
-    counter++;
+    count++;
 }
