@@ -66,10 +66,10 @@ function printFlags() {
         }
         flagsImgArray = document.getElementsByClassName("flags");
         for (var j = 0; j < flagsImgArray.length; j++) {
-            // positionLeftFlag = Math.floor(Math.random() * 1041);
-            // positionTopFlag = Math.floor(Math.random() * 351);
-            // flagsImgArray[j].style.left = `${positionLeftFlag}px`;
-            // flagsImgArray[j].style.top = `${positionTopFlag}px`;
+            positionLeftFlag = Math.floor(Math.random() * 1201);
+            positionTopFlag = Math.floor(Math.random() * 411);
+            flagsImgArray[j].style.left = `${positionLeftFlag}px`;
+            flagsImgArray[j].style.top = `${positionTopFlag}px`;
             flagsImgArray[j].onclick = (event) => {
                 event.target.style.display = "none";
                 console.log(`X: ${event.clientX}, Y: ${event.clientY}`);
